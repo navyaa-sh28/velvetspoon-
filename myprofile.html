@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Velvet Spoon</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styling for profile form */
+        .profile-section {
+            padding: 50px;
+        }
+
+        .profile-section .text-box {
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            background-color: #ffffff; /* light greenish background for profile form */
+            border: 2px solid #A3D9A5;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .profile-section .text-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4B2E19;
+        }
+
+        .profile-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .profile-section label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .profile-section input,
+        .profile-section select,
+        .profile-section textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #A3D9A5;
+        }
+
+        .profile-section button {
+            padding: 10px;
+            background-color: #A67B5B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .profile-section button:hover {
+            background-color: #8A5C42;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Velvet Spoon
+        <img src="—Pngtree—green logo leaf with fork_19984242.png" width="50" height="50">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="addreview.html">Add Review</a></li>
+            <li><a href="myprofile.html">
+                <img src="profile.jpg" alt="Profile" width="30" height="30">
+            </a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="profile-section">
+    <div class="text-box">
+        <h2>My Profile</h2>
+        <form>
+            <!-- Profile Photo Upload -->
+            <div>
+                <label for="profile-photo">Profile Photo</label>
+                <input type="file" id="profile-photo" accept="image/*">
+            </div>
+
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" value="Priya Sharma">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" value="priya@example.com">
+            </div>
+
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" value="28">
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="female" selected>Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" value="+91-9876543210">
+            </div>
+
+            <div>
+                <label for="address">Address</label>
+                <textarea id="address" rows="2">123, Green Street, Delhi</textarea>
+            </div>
+
+            <div>
+                <label for="fav-dish">Favorite Dish</label>
+                <input type="text" id="fav-dish" value="Quinoa & Veggie Salad">
+            </div>
+
+           <div>
+    <label for="coupons">Available Coupons</label>
+    <select id="coupons">
+        <option value="">-- Select a Coupon --</option>
+        <option value="WELCOME10">WELCOME10 - 10% off</option>
+        <option value="VEGGIE20">VEGGIE20 - 20% off Veggie Dishes</option>
+        <option value="FESTIVE15">FESTIVE15 - 15% off Festive Menu</option>
+        <option value="SALAD5">SALAD5 - ₹5 off on Salads</option>
+    </select>
+</div>
+
+
+            <div>
+                <button type="submit">Save Changes</button>
+            </div>
+        </form>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2025 Velvet Spoon | Pure Veg Restaurant</p>
+</footer>
+
+</body>
+</html>
